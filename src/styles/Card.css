@@ -1,0 +1,74 @@
+table {
+    width: 850px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    /* background-color: rgba(12, 36, 90, 0.1);
+    border-radius: 15px; */
+
+  }
+
+.table-header {
+    border: 2px solid pink;
+    padding: 10px 20px;
+    max-width: 850px;
+    margin: 0 auto;
+    border: 1px solid #0c245A;
+    border-radius: 15px;
+    background-color: rgba(12, 36, 90, 0.45);
+    font-size: large;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+  }
+
+#table-container{
+  background-color: rgba(12, 36, 90, 0.075);
+  width:850px;
+  margin: 0 auto;
+  border-radius: 15px;
+
+}
+
+@media screen and (max-width:1240px) {
+  table {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    /* background-color: rgba(12, 36, 90, 0.1);
+    border-radius: 15px; */
+
+  }
+
+  /* look at airbnb */
+  /* th {
+    border-bottom: 1px solid black;
+  } */
+
+  .number-input {
+    width: 50px;
+  }
+
+  .table-header {
+    border: 2px solid pink;
+    padding: 10px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid #0c245A;
+    border-radius: 15px;
+    background-color: rgba(12, 36, 90, 0.45);
+    font-size: large;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #table-container{
+  background-color: rgba(12, 36, 90, 0.075);
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 15px;
+
+  }
+}
