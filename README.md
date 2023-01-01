@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Breakeven
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description:
 
-## Available Scripts
+This website is to calculate if the breakeven point. Breakeven point is if total earnings on the selected credit card benefits is greater than the annaul fee.
 
-In the project directory, you can run:
+### HOW TO USE
 
-### `npm start`
+1. Click on the provider: Chase, Capital One, American Express
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Click on the desired credit card.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- User can click on multiple credit cards from the same provider. The gauge will add the annual fees and earnings.
 
-### `npm test`
+3. Review Gauge
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Circle marker will be highlighted in red if the breakeven point is not met. Circle marker will be highlighted in blue if breakeven point is met.
+- Ticker and gauge color graident will move with the total earnings
 
-### `npm run build`
+### Technology
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This App uses React v18.0 and d3 library
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Possible Improvements:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Add additional credit card companies
+- Navbar reflects the selected company
+- Include an instructions page
 
-### `npm run eject`
+### Setup:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run this project, install it locally using npm:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+$ cd ../breakeven
+$ npm install
+$ npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Acknowledgments:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- https://wattenberger.com/blog/gauge
