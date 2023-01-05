@@ -4,7 +4,7 @@ import '../styles/Card.css'
 
 export default function Card(props) {
     const [formData, setFormData] = useState(
-        {one: "0", two: "0", three: "0", four: "0", five: "0", six: "0"}
+        {one: "", two: "", three: "", four: "", five: "", six: ""}
     )
 
     function handleChange(event) {
@@ -14,6 +14,10 @@ export default function Card(props) {
                 [event.target.name]: event.target.value
             }
         })
+    }
+    
+    function clearData() {
+        setFormData({one: "", two: "", three: "", four: "", five: "", six: ""})
     }
     // const [isInclude, setIsInclude] = useState(false)
 
@@ -30,16 +34,23 @@ export default function Card(props) {
                 {
                     props.benefitsData.map((item) => (
                         <tr className="border-line">
-                            <th>{item.description}</th>
+                            <th className="item-description">{item.description}</th>
                             <th>
-                                <form>
-                                    <input className="number-input" type='number' name={item.name} value={formData[item.name]} placeholder="1.00" />    
-                                </form>
+                                <input className="number-input" type='number' name={item.name} value={formData[item.name]} placeholder="1.00" />    
                             </th>
                         </tr>
                         
                     ))
                 }
+                <tr>
+                    <th>
+                    </th>
+                    <th>
+                        <button className="clear-all-btn" onClick={clearData}>Clear All</button>
+                    </th>
+                </tr>
+
+                
                 {/* <div className="total-earned" >
                     <tr>Total Earned: 
                         <th>
@@ -61,7 +72,6 @@ export default function Card(props) {
                         </th>
                     </tr>
                 </div>
-
 
             </table>
         )

@@ -1,9 +1,26 @@
 function totalEarned(cardAcronym, one, two, three, four, five, six){
+    if (!one) {
+        one = 0
+    }
+    else if (!two) {
+        two = 0
+    }
+    else if (!three) {
+        three = 0
+    }
+    else if (!four) {
+        four = 0
+    }
+    else if (!five) {
+        five = 0
+    }
+    else if (!six) {
+        six = 0
+    }
+ 
     // Chase 
     if (cardAcronym==="CF") {
         let sumdollars = ((parseFloat(one*5)+parseFloat(two*5)+parseFloat(three*5)+parseFloat(four*5))/100)
-        five = 0
-        six = 0
         return sumdollars
     } 
     else if (cardAcronym==="CFU") {
@@ -18,10 +35,7 @@ function totalEarned(cardAcronym, one, two, three, four, five, six){
         return sumdollars
     }
     else if (cardAcronym==="CSR") {
-        if (!one && !two && !three && !four && !five && !six) {
-            return 0
-        }
-        let sumdollars = ((parseFloat(one*5)+parseFloat(two*10)+parseFloat(three*10)+parseFloat(four*3)+parseFloat(five*3)+parseFloat(six))/100)
+        let sumdollars = ((parseFloat(one*5)+parseFloat(two*10)+parseFloat(three*10)+parseFloat(four*3)+parseFloat(five*3)+parseFloat(six*1))/100)
         return sumdollars
     }
 
@@ -53,6 +67,25 @@ function totalEarned(cardAcronym, one, two, three, four, five, six){
 
 
 function totalPoints(cardAcronym, one, two, three, four, five, six){
+    if (!one) {
+        one = 0
+    }
+    else if (!two) {
+        two = 0
+    }
+    else if (!three) {
+        three = 0
+    }
+    else if (!four) {
+        four = 0
+    }
+    else if (!five) {
+        five = 0
+    }
+    else if (!six) {
+        six = 0
+    }
+
     if (cardAcronym==="CF") {
         let sumpoints = (parseFloat(one*5)+parseFloat(two*5)+parseFloat(three*5)+parseFloat(four*5))
         return sumpoints
@@ -69,10 +102,7 @@ function totalPoints(cardAcronym, one, two, three, four, five, six){
         return sumpoints
     }
     else if (cardAcronym==="CSR") {
-        if (!one && !two && !three && !four && !five && !six) {
-            return 0
-        }
-        let sumpoints = (parseFloat(one*5)+parseFloat(two*10)+parseFloat(three*10)+parseFloat(four*3)+parseFloat(five*3)+parseFloat(six))
+        let sumpoints = (parseFloat(one*5)+parseFloat(two*10)+parseFloat(three*10)+parseFloat(four*3)+parseFloat(five*3)+parseFloat(six*1))
         return sumpoints
         }
 

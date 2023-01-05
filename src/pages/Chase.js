@@ -36,8 +36,6 @@ export default function Chase() {
                 <p>Total Dollars Earned of selected cards: {gaugeDollarTotal}</p>
             </div>
 
-            
-
         
             {/* Chase Freedom - Array 0*/}
             <div className="table-all" >
