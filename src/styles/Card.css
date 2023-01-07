@@ -25,6 +25,10 @@ table {
   text-align: left;
 }
 
+.input-container{
+  width: 30%;
+}
+
 .number-input{
   padding: 12px 16px;
   /* gap: 8px; */
@@ -49,6 +53,26 @@ table {
 .number-input:focus{
   outline: none;
 }
+
+.checkbox{
+  width: 18px;
+  height: 18px;
+  left: 64px;
+  top: 88px;
+  border: 1.6666px solid #5661d9;
+  color: red;
+  align-self: center;
+  border-radius: 4px;
+
+}
+
+input[type="checkbox"]:checked{
+  accent-color: #5661d9;
+
+  border: 1.6666px solid #5661d9;
+
+}
+
 #table-container{
   background-color: rgba(12, 36, 90, 0.075);
   width:850px;
@@ -93,10 +117,6 @@ table {
     border-bottom: 1px solid black;
   } */
 
-  .number-input {
-    width: 50px;
-  }
-
   .table-header {
     border: 2px solid pink;
     padding: 10px 20px;
@@ -128,5 +148,14 @@ table {
     border-width: 0.7px;
     background-color: ghostwhite;
     margin: 5px 10px;
+  }
+
+  .input-container{
+    display: flex;
+    min-width: 95%;
+    /* margin: 0px 2px; */
+  }
+  .number-input{
+    width: 100%;
   }
 }

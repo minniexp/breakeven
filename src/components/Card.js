@@ -35,7 +35,7 @@ export default function Card(props) {
                     props.benefitsData.map((item) => (
                         <tr className="border-line">
                             <th className="item-description">{item.description}</th>
-                            <th>
+                            <th className="input-container">
                                 $ <input type='number' className="number-input" name={item.name} value={formData[item.name]} placeholder="1.00" />    
                             </th>
                         </tr>
@@ -82,7 +82,7 @@ export default function Card(props) {
             <div id="table-container">
                 <div className="table-header">
                     <span>{props.cardName}</span>
-                    <input type="checkbox" onClick={props.setInclude}/>
+                    <input type="checkbox" className="checkbox" onClick={props.setInclude}/>
                 </div>
 
                 <div className="table" onChange={handleChange}>
