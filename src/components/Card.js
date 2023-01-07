@@ -4,7 +4,7 @@ import '../styles/Card.css'
 
 export default function Card(props) {
     const [formData, setFormData] = useState(
-        {one: "", two: "", three: "", four: "", five: "", six: ""}
+        {one: "", two: "", three: "", four: "", five: "", six: "", seven: ""}
     )
 
     function handleChange(event) {
@@ -17,7 +17,7 @@ export default function Card(props) {
     }
     
     function clearData() {
-        setFormData({one: "", two: "", three: "", four: "", five: "", six: ""})
+        setFormData({one: "", two: "", three: "", four: "", five: "", six: "", seven: ""})
     }
     // const [isInclude, setIsInclude] = useState(false)
 
@@ -25,8 +25,8 @@ export default function Card(props) {
     //     setIsInclude(previnclude => !previnclude)
     // }
 
-    let sumDollars = totalEarned(props.cardAcronym, formData.one, formData.two, formData.three, formData.four, formData.five, formData.six).toFixed(2)
-    let sumPoints = totalPoints(props.cardAcronym, formData.one, formData.two, formData.three, formData.four, formData.five, formData.six).toFixed(2)
+    let sumDollars = totalEarned(props.cardAcronym, formData.one, formData.two, formData.three, formData.four, formData.five, formData.six, formData.seven).toFixed(2)
+    let sumPoints = totalPoints(props.cardAcronym, formData.one, formData.two, formData.three, formData.four, formData.five, formData.six, formData.seven).toFixed(2)
 
     function createTable() {
         return (
@@ -36,7 +36,7 @@ export default function Card(props) {
                         <tr className="border-line">
                             <th className="item-description">{item.description}</th>
                             <th>
-                                <input className="number-input" type='number' name={item.name} value={formData[item.name]} placeholder="1.00" />    
+                                $ <input type='number' className="number-input" name={item.name} value={formData[item.name]} placeholder="1.00" />    
                             </th>
                         </tr>
                         

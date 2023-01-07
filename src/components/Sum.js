@@ -1,4 +1,4 @@
-function totalEarned(cardAcronym, one, two, three, four, five, six){
+function totalEarned(cardAcronym, one, two, three, four, five, six, seven){
     if (!one) {
         one = 0
     }
@@ -16,6 +16,9 @@ function totalEarned(cardAcronym, one, two, three, four, five, six){
     }
     else if (!six) {
         six = 0
+    }
+    else if (!seven) {
+        seven = 0
     }
  
     // Chase 
